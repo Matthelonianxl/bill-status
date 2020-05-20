@@ -1,0 +1,10 @@
+00:51:17.643 google-auth2.js:1 onSignedInChangeHandler true
+00:51:47.028 gcloud container clusters get-credentials doc-cluster-1 --zone us-west1-b --project ethereal-177415
+kubectl proxy
+gcloud compute --project "ethereal-177415" ssh --zone “us-west1-b" "gke-doc-cluster-1-default-pool-a907c825-42zg"
+gcloud compute --project "ethereal-177415" ssh --zone “US-west1-b" "gke-doc-cluster-1-default-pool-a907c825-bx6d"
+kubectl proxy
+gcloud compute instances stop ${instance_name} --zone ${zone} --project ethereal-177415
+gcloud compute instances set-machine-type ${instance_name} --machine-type
+${new_machine_type_name} --zone ${zone} --project ethereal-177415
+00:51:47.038 VM372:1 Uncaught SyntaxError: Unexpected identifier
